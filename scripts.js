@@ -57,11 +57,20 @@ console.log(firstName + ' ' +lastName);
 
 var year, yearJohn, yearMark;
 now = 2019;
-yearJohn = now - 38;
-yearMark = now - 22;
+ageJohn = 38;
+ageMark = 22;
+
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
 
 console.log(yearMark);
 
 console.log(now + 3 );
 console.log(now * 2 );
 console.log(now / 10 );
+
+// logical operators
+var johnOlder = ageJohn > ageMark;
+console.log(johnOlder);
+
+//
