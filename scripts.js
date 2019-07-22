@@ -89,6 +89,14 @@ var now = 2019;
 var yearJohn = 1980;
 var fullAge = 18;
 
-var isFullAge = now - yearJohn >= fullAge;
-
+//multiple operators
+var isFullAge = now - yearJohn >= fullAge; // full age
 console.log(isFullAge);
+
+
+
+//grouping
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
