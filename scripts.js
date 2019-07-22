@@ -1,3 +1,7 @@
+/*************************************
+ * Variables and Data Types
+*/
+
 var firstName = 'Johanne';
 console.log(firstName);
 
@@ -11,3 +15,7 @@ console.log(job);
 
 job = 'Developer';
 console.log(job);
+
+//variable naming rules
+var _3years = 3;
+var johnMark = 'John and Mark';
