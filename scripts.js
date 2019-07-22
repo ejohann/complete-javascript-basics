@@ -104,5 +104,4 @@ console.log(average);
 
 var x, y;
 y = x = (3 + 5) * 4 - 6; // 8 * 4 - 6 //32 - 6// 26 
-console.log(x);
-console.log(y);
+console.log(x, y);
