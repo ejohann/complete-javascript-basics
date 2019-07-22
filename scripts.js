@@ -26,6 +26,7 @@ var johnMark = 'John and Mark';
  * Variable mutation and type coercion
 */
 
+/*
 var firstName = 'Johanne';
 var age = 38;
 
@@ -47,3 +48,20 @@ alert(firstName + ' is a '  + age + ' year old ' + job +'. Is he married? ' + is
 var lastName = prompt('What is his last name?');
 
 console.log(firstName + ' ' +lastName);
+*/
+
+
+/*************************************
+ * Basic Operators
+*/
+
+var year, yearJohn, yearMark;
+now = 2019;
+yearJohn = now - 38;
+yearMark = now - 22;
+
+console.log(yearMark);
+
+console.log(now + 3 );
+console.log(now * 2 );
+console.log(now / 10 );
