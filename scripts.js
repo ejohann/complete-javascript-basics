@@ -150,7 +150,7 @@ johnBMI = johnMass / (johnHeight * johnHeight);
 console.log(johnBMI);
 
 var isBMIHigher =  markBMI > johnBMI;
-console.log("Is Mark's BMI higher than John's? " + isBMIHigher);
+console.log('Is Mark\'s BMI higher than John\'s? ' + isBMIHigher);
 
 
 
