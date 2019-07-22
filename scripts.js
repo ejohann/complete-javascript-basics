@@ -85,6 +85,7 @@ console.log(typeof 'Mark is Older');
  * Operator Precedence
 */
 
+/*
 var now = 2019;
 var yearJohn = 1980;
 var fullAge = 18;
@@ -118,7 +119,38 @@ console.log(x);
 
 x--;
 console.log(x);
+*/
 
+
+/*************************************
+ * CODING CHALLENGE 1
+*/
+
+/*
+  Calculate Mark and John BMI (body mass index)
+
+  BMI = mass / height * height (mass in kg and height in meter)
+
+*/
+
+
+var markMass, johnMass, markHeight, johnHeight, markBMI, johnBMI;
+
+markMass = 127;
+markHeight = 1.67;
+
+markBMI = markMass / (markHeight * markHeight);
+
+console.log(markBMI);
+
+johnMass = 84.4;
+johnHeight = 1.74;
+
+johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(johnBMI);
+
+var isBMIHigher =  markBMI > johnBMI;
+console.log("Is Mark's BMI higher than John's? " + isBMIHigher);
 
 
 
