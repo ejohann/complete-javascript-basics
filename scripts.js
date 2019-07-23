@@ -238,7 +238,7 @@ else{
  * The Tenary Operator and Switch Statements
 */
 
-
+//tenary operator
 var firstName = 'Johanne';
 var age = 20;
 
@@ -247,7 +247,24 @@ age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + '
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
+//switch statement
+var job = 'disc jockey';
 
+switch(job) {
+    case 'developer':
+       console.log(firstName + ' develops complex websites');
+        break;       
+    case 'driver':
+        console.log(firstName + ' is learning to drive');
+        break;
+    case 'disc jockey':
+        console.log(firstName + ' knows how to rock a party');
+        break;
+    default:
+        console.log(firstName + ' does something else');
+}
+    
+    
 
 
 
