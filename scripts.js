@@ -293,11 +293,14 @@ switch(true){
 
 // truthy values: NOT falsy values
 
-var height = 0;
+var height = 23;
 
 height || height === 0 ? console.log('variable is defined') : console.log('variable has NOT been defined');
 
 
+//Equality coercion
+
+height === '23' ? console.log('The == operator does type coercion!') : console.log('');
 
 
 
