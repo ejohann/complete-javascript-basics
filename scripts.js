@@ -212,7 +212,7 @@ else
  * Boolean Logic
 */
 
-
+/*
 var firstName = 'Johanne';
 var age = 20;
 
@@ -228,6 +228,28 @@ else if(age >= 20 || age < 30){
 else{
      console.log(firstName + ' is a man');
 }
+
+*/
+
+
+
+
+/*************************************
+ * The Tenary Operator and Switch Statements
+*/
+
+
+var firstName = 'Johanne';
+var age = 20;
+
+
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.'); 
+
+
+
+
+
+
 
 
 
