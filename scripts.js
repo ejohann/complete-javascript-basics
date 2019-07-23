@@ -293,6 +293,7 @@ switch(true){
 
 // truthy values: NOT falsy values
 
+/*
 var height = 23;
 
 height || height === 0 ? console.log('variable is defined') : console.log('variable has NOT been defined');
@@ -302,23 +303,97 @@ height || height === 0 ? console.log('variable is defined') : console.log('varia
 
 height === '23' ? console.log('The == operator does type coercion!') : console.log('');
 
+*/
 
 
 
+/*************************************
+ * Coding Challenge 2
+*/
+
+/*
+    Last three basketball games scores: John's team - 89, 120, 103 and Mike's team - 116, 94, 123
+    1. average score for each team
+    2. print the winner to the console based on the highest average - also print the average
+    3. change the scores to show different winners - take into account there might be a draw
+    4. Mary's team scored 97, 134 and 105 points - log the winner to the console - change the scores to generate different winners
+*/
+
+var teamJohnGame1, teamJohnGame2, teamJohnGame3, teamMikeGame1, teamMikeGame2, teamMikeGame3, teamJohnAvg, teamMikeAvg;
+
+teamJohnGame1 = 89;
+teamJohnGame2 = 91;
+teamJohnGame3 = 101;
+teamMikeGame1 = 88;
+teamMikeGame2 = 94;
+teamMikeGame3 = 99;
+teamJohnAvg = (teamJohnGame1 + teamJohnGame2 + teamJohnGame3) / 3;
+teamMikeAvg = (teamMikeGame1 + teamMikeGame2 + teamMikeGame3) / 3;
+
+console.log('Team John average score ' + teamJohnAvg);
+console.log('Team Mike average score ' + teamMikeAvg);
+
+switch(true){
+    case teamJohnAvg > teamMikeAvg:
+        console.log('John\'s team won with average points of ' + teamJohnAvg);
+        break;
+    case 
+        teamMikeAvg > teamJohnAvg:
+        console.log('Mike\'s team won with average points of ' + teamMikeAvg);
+        break;
+    default:
+        console.log('There was a draw');
+}
 
 
+var teamMaryGame1, teamMaryGame2, teamMaryGame3, teamMaryAvg;
 
+teamMaryGame1 = 99;
+teamMaryGame2 = 93;
+teamMaryGame3 = 89;
+teamMaryAvg = (teamMaryGame1 + teamMaryGame2 + teamMaryGame3) /3;
 
+console.log('Team Mary average score ' + teamMaryAvg);
 
-
-
-
-
-
-
-
-
-
+switch(true){
+    case teamJohnAvg > teamMikeAvg && teamJohnAvg > teamMaryAvg :
+        console.log('John\'s team won with average points of ' + teamJohnAvg);
+        break;
+    case 
+        teamMikeAvg > teamJohnAvg && teamMikeAvg > teamMaryAvg :
+        console.log('Mike\'s team won with average points of ' + teamMikeAvg);
+        break;
+    case 
+        teamMaryAvg > teamJohnAvg && teamMaryAvg > teamMikeAvg :
+        console.log('Mary\'s team won with average points of ' + teamMaryAvg);
+        break;
+    case 
+        teamMaryAvg === teamJohnAvg && teamMaryAvg > teamMikeAvg :
+        console.log('Mary\'s and John\'s team won with a tie.  Average points ' + teamMaryAvg, teamJohnAvg);
+        break;
+     case 
+        teamMaryAvg === teamMikeAvg && teamMaryAvg > teamJohnAvg :
+        console.log('Mary\'s and Mike\'s team won with a tie. Average points of ' + teamMaryAvg, teamMikeAvg);
+        break;
+     case 
+        teamMikeAvg === teamJohnAvg && teamMikeAvg > teamMaryAvg :
+        console.log('Mike\'s and John\'s team won with a tie. Average points of ' + teamMikeAvg, teamJohnAvg);
+        break;
+     case 
+        teamMaryAvg === teamJohnAvg && teamMaryAvg < teamMikeAvg :
+        console.log('Mary\'s and John\'s team had a tie.  Mike\'s team won with average points ' + teamMikeAvg);
+        break;
+     case 
+        teamMaryAvg === teamMikeAvg && teamMaryAvg < teamJohnAvg :
+        console.log('Mary\'s and Mike\'s team had a tie. John\'s team won with average points of ' + teamJohnAvg);
+        break;
+     case 
+        teamMikeAvg === teamJohnAvg && teamMikeAvg < teamMaryAvg :
+        console.log('Mike\'s and John\'s team had a tie. Mary\'s team won with average points of ' + teamMaryAvg);
+        break;
+    default:
+        console.log('There was a draw');
+}
 
 
 
