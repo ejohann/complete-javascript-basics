@@ -319,6 +319,8 @@ height === '23' ? console.log('The == operator does type coercion!') : console.l
     4. Mary's team scored 97, 134 and 105 points - log the winner to the console - change the scores to generate different winners
 */
 
+
+/*
 var teamJohnGame1, teamJohnGame2, teamJohnGame3, teamMikeGame1, teamMikeGame2, teamMikeGame3, teamJohnAvg, teamMikeAvg;
 
 teamJohnGame1 = 89;
@@ -416,6 +418,8 @@ else {
     console.log('There is a draw');
 }
 
+*/
+
 /*
 if(scoreJohn > scoreMike){
     console.log('John\'s team wins with ' + scoreJohn + ' points');
@@ -432,15 +436,19 @@ else{
 
 
 
+/*************************************
+ * Functions
+*/
 
 
+function calculateAge(birthYear){
+    return 2019 - birthYear;
+}
 
-
-
-
-
-
-
+var ageMike = calculateAge(1997);
+var ageMary = calculateAge(1974);
+var ageJohn = calculateAge(1980);
+console.log(ageMike, ageMary, ageJohn);
 
 
 
