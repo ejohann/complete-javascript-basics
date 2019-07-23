@@ -133,7 +133,7 @@ console.log(x);
 
 */
 
-
+/*
 var markMass, johnMass, markHeight, johnHeight, markBMI, johnBMI;
 
 markMass = 127;
@@ -151,6 +151,62 @@ console.log(johnBMI);
 
 var isBMIHigher =  markBMI > johnBMI;
 console.log('Is Mark\'s BMI higher than John\'s? ' + isBMIHigher);
+
+
+*/
+
+
+
+
+
+/*************************************
+ * If / else statements
+*/
+
+var firstName = 'Johanne';
+var civilStatus = 'single';
+
+
+if(civilStatus  === 'married'){
+  console.log(firstName + ' is married');       
+ }
+else{
+    console.log(firstName + ' will hopefully marry soon :) ');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
