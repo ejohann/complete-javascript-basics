@@ -293,9 +293,9 @@ switch(true){
 
 // truthy values: NOT falsy values
 
-var height = 2;
+var height = 0;
 
-height ? console.log('variable is defined') : console.log('variable has NOT been defined');
+height || height === 0 ? console.log('variable is defined') : console.log('variable has NOT been defined');
 
 
 
