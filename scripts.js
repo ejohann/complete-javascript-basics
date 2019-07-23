@@ -184,6 +184,26 @@ else{
 
 
 
+var markMass, johnMass, markHeight, johnHeight, markBMI, johnBMI;
+
+markMass = 127;
+markHeight = 1.67;
+
+markBMI = markMass / (markHeight * markHeight);
+
+johnMass = 84.4;
+johnHeight = 1.74;
+
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+if(markBMI > johnBMI)
+ {
+     console.log('Mark\'s BMI is higher than John\'s');
+ }
+else
+ {
+     console.log('John\'s BMI is higher than Mark\'s');
+ }
 
 
 
