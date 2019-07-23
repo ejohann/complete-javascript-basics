@@ -440,7 +440,7 @@ else{
  * Functions
 */
 
-
+/*
 function calculateAge(birthYear){
     return 2019 - birthYear;
 }
@@ -470,6 +470,48 @@ yearsUntilRetirement(1997, 'Mike');
 yearsUntilRetirement(1980, 'Johanne');
 
 yearsUntilRetirement(1945, 'Mary');
+*/
+
+
+/*************************************
+ * Function Statements and Expressions
+*/
+
+
+//function expression
+
+var whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'disc jockey':
+            return firstName + ' rocks the party';
+        case 'driver':
+           return firstName + ' is learning to drive';
+        case 'developer':
+            return firstName + ' develops complex websites';
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+
+console.log(whatDoYouDo('disc jockey', 'Johanne'));
+
+console.log(whatDoYouDo('developer', 'Johanne'));
+
+console.log(whatDoYouDo('is retired', 'Jane'));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
