@@ -452,11 +452,15 @@ console.log(ageMike, ageMary, ageJohn);
 
 
 
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    console.log(firstName + ' retires in ' + retirement + ' years ');
+}
 
+yearsUntilRetirement(1997, 'Mike');
 
-
-
-
+yearsUntilRetirement(1980, 'Johanne');
 
 
 
