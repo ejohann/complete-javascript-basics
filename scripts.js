@@ -222,7 +222,7 @@ if(age < 13){
 else if(age > 12 && age < 20){
   console.log(firstName + ' is a teenager');        
 }
-else if(age >= 20 || age < 30){
+else if(age >= 20 && age < 30){
    console.log(firstName + ' is a young man');     
 }
 else{
@@ -240,7 +240,7 @@ else{
 
 //tenary operator
 var firstName = 'Johanne';
-var age = 20;
+var age = 17;
 
 age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
 
@@ -264,8 +264,22 @@ switch(job) {
     default:
         console.log(firstName + ' does something else');
 }
-    
-    
+
+
+switch(true){
+    case age < 13:
+       console.log(firstName + ' is a boy');
+        break;
+    case age > 12 && age < 20:
+       console.log(firstName + ' is a teenager');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man'); 
+        break;
+    default:
+        console.log(firstName + ' is a man');        
+}
+
 
 
 
