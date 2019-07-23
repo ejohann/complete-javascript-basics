@@ -248,10 +248,11 @@ var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
 //switch statement
-var job = 'disc jockey';
+var job = 'developer';
 
 switch(job) {
     case 'developer':
+    case 'programmer':
        console.log(firstName + ' develops complex websites');
         break;       
     case 'driver':
