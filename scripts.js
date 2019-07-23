@@ -238,6 +238,8 @@ else{
  * The Tenary Operator and Switch Statements
 */
 
+/*
+
 //tenary operator
 var firstName = 'Johanne';
 var age = 17;
@@ -279,6 +281,22 @@ switch(true){
     default:
         console.log(firstName + ' is a man');        
 }
+
+*/
+
+
+/*************************************
+ * Truthy and falsy values and equality operators
+*/
+
+// falsy values: undefined, null, 0, '', Nan
+
+// truthy values: NOT falsy values
+
+var height = 2;
+
+height ? console.log('variable is defined') : console.log('variable has NOT been defined');
+
 
 
 
