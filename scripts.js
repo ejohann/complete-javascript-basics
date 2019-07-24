@@ -507,7 +507,7 @@ console.log(whatDoYouDo('is retired', 'Jane'));
  *  Arrays
 */
 
-
+/*
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1980, 1997, 1948);
 
@@ -549,9 +549,37 @@ var isDeveloper = john.indexOf('developer') === -1 ? 'John is NOT a developer' :
 console.log(isDeveloper);
 
 
+*/
 
 
+/*************************************
+ *  CODING CHALLENGE 3
+*/
 
+/*
+    Bills $124, $48, $268
+    
+    Tips 20% bills less than $50, 15% bills between $50 and $200, 10% for bills more than $200
+    
+    Create array with all three tips (tip for each bill)
+    
+    Create array with all three final paid ammounts
+*/
+
+
+function calculateTip(bill){
+      if(bill < 50){ return bill * 0.2;}
+      else if(bill > 50 && bill < 200){return bill * 0.15;}
+      else {return bill * .1;}
+}
+
+var tipsArray = [calculateTip(124), calculateTip(48), calculateTip(268)];
+
+console.log(tipsArray);
+
+var billsArray = [calculateTip(124) + 124, calculateTip(48) + 48, calculateTip(268) + 268];
+
+console.log(billsArray);
 
 
 
