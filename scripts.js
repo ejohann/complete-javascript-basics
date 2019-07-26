@@ -665,12 +665,12 @@ var john = {
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'Developer',
     isMarried: false,
-    calcAge: function(birthYear){
-        return 2019 - birthYear;
+    calcAge: function(){
+        return 2019 - this.birthYear;
     }
 };
 
-console.log(john.calcAge(1997));
+console.log(john.calcAge());
 
 
 
