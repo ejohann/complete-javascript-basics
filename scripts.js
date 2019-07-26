@@ -817,7 +817,11 @@ for(var i = 0; i < john.length; i++){
 }
 
 
+//looping backwards
 
+for(var i = john.length - 1; i >= 0; i--){
+    console.log(john[i]);
+}
 
 
 
