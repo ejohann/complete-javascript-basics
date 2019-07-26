@@ -741,7 +741,7 @@ else
 
 var john = {
     fullName: 'John Smith',
-    mass:  110,
+    mass:  92,
     height: 1.95,
     calcBMI: function(){
         this.bmi = this.mass / (this.height * this.height);
@@ -763,7 +763,7 @@ var mark = {
 if(john.calcBMI() > mark.calcBMI()){
     console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
 }
-else if(mark.calcBMI() > john.calcBMI()){
+else if(mark.bmi > john.bmi){
     console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
 }
 else{
