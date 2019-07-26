@@ -666,11 +666,11 @@ var john = {
     job: 'Developer',
     isMarried: false,
     calcAge: function(){
-        return 2019 - this.birthYear;
+       this.age = 2019 - this.birthYear;
     }
 };
 
-john.age = john.calcAge();
+john.calcAge();
 
 console.log(john);
 
