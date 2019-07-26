@@ -737,6 +737,7 @@ else
 */
 
 
+/*
 // lecturer's solution
 
 var john = {
@@ -769,6 +770,37 @@ else if(mark.bmi > john.bmi){
 else{
     console.log('They have the same BMI');
 }
+
+*/
+
+
+/*************************************
+ *  Loops and iteration
+*/
+
+
+for(var i = 0; i < 10; i++)
+    {
+        console.log(i);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
