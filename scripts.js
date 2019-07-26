@@ -694,7 +694,7 @@ console.log(john);
    Log to the console who has the highest BMI, together with their full name and respective BMI, also consider they might have the same BMI
 */
 
-
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -734,8 +734,43 @@ else
   {
       console.log(mark.firstName + ' ' + mark.lastName + ' and ' + john.firstName + ' ' + john.lastName + ' both have the same BMI of ' + mark.BMI, john.BMI);
   }
+*/
 
 
+// lecturer's solution
+
+var john = {
+    fullName: 'John Smith',
+    mass:  110,
+    height: 1.95,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+var mark = {
+    fullName: 'Mark Miller',
+    mass:  78,
+    height: 1.69,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+john.calcBMI();
+mark.calcBMI();
+
+if(john.bmi > mark.bmi){
+    console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
+}
+else if(mark.bmi > john.bmi){
+    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+}
+else{
+    console.log('They have the same BMI');
+}
 
 
 
