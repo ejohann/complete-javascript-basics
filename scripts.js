@@ -778,7 +778,7 @@ else{
  *  Loops and iteration
 */
 
-
+/*
 for(var i = 0; i < 10; i++)
     {
         console.log(i);
@@ -799,6 +799,17 @@ while(i < john.length){
     i++;
 }
 
+*/
+
+
+//continue and break statements
+
+var john = ['John', 'Smith', 1998, 'developer', false];
+
+for(var i = 0; i < john.length; i++){
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
 
 
 
