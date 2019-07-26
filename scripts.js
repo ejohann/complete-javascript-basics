@@ -759,13 +759,11 @@ var mark = {
     }
 };
 
-john.calcBMI();
-mark.calcBMI();
 
-if(john.bmi > mark.bmi){
+if(john.calcBMI() > mark.calcBMI()){
     console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
 }
-else if(mark.bmi > john.bmi){
+else if(mark.calcBMI() > john.calcBMI()){
     console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
 }
 else{
