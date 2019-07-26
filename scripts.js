@@ -670,7 +670,10 @@ var john = {
     }
 };
 
-console.log(john.calcAge());
+john.age = john.calcAge();
+
+console.log(john);
+
 
 
 
