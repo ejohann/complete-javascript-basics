@@ -634,6 +634,9 @@ console.log(john.lastName);
 console.log(john.job);
 console.log(john['firstName']);
 
+var x = 'birthYear';
+console.log(john[x]);
+
 
 
 
