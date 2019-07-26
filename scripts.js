@@ -620,6 +620,7 @@ console.log(totalBills);
  *  Objects and properties
 */
 
+// object literal
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -637,11 +638,17 @@ console.log(john['firstName']);
 var x = 'birthYear';
 console.log(john[x]);
 
-
 //mutate properties
 john.job = 'designer';
 john['isMarried'] = true;
 console.log(john);
+
+// new object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1948;
+jane['lastName'] = 'Charles';
+console.log(jane);
 
 
 
