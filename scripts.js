@@ -566,7 +566,7 @@ console.log(isDeveloper);
     Create array with all three final paid ammounts
 */
 
-
+/*
 function calculateTip(bill){
       if(bill < 50){ return bill * 0.2;}
       else if(bill >= 50 && bill < 200){return bill * 0.15;}
@@ -612,11 +612,27 @@ var totalBills = [bills[0] + tips[0],
 console.log(totalBills);
 
 
+*/
 
 
 
+/*************************************
+ *  Objects and properties
+*/
 
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1997,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'Developer',
+    isMarried: false
+};
 
+console.log(john);
+console.log(john.lastName);
+console.log(john.job);
+console.log(john['firstName']);
 
 
 
